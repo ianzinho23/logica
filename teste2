@@ -1,0 +1,25 @@
+programa{
+  funcao inicio(){
+    //Definindo Variáveis
+    inteiro login, senha
+    cadeia adm
+    //Pedindo Dados do Usuário
+    escreva("Digite seu Login: ")
+    leia(login)
+    escreva("Digite sua Senha: ")
+    leia(senha)
+    //Exibindo Resultados
+    escreva("\n\n====Exibindo Resultados====")
+    escreva("\nSeu login: ",login)
+    escreva("\nSua senha: ",senha)  
+    //Verificando login e senha
+      se 
+       (login==5024)
+      se    
+      (senha==12345)
+        escreva("\nLogin correto,bem vindo!!")
+
+        senao escreva("\nLogin ou senha incorretos, tente novamente")
+
+  }
+}
