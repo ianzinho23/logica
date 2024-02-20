@@ -1,0 +1,47 @@
+programa{
+  funcao inicio(){
+    //Definindo Variáveis
+    cadeia opcao,prato,preco
+    
+    //Informando o menu
+    escreva("\t\t\t\t====MENU====")
+    escreva("\n1 -\tPicanha \t\t R$ 25,00")
+    escreva("\n2 -\tMacarronada \t\t R$ 35,00")
+    escreva("\n3 - \tCaviar \t\t R$ 50,00")
+    escreva("\n4 - \tLasanha \t\t R$ 20,00")
+    escreva("\n5 - \tBife Acebolado \t\t R$ 15,00")
+    escreva("\n===FIM DO MENU===")
+
+    escreva("\nDigite o número da opção desejeda: ")
+    leia(opcao)
+    
+    //Lendo dados do cliente
+    escolha(opcao){
+    caso "1":
+    prato="Picanha" 
+    preco="R$ 25.00"
+    pare
+    caso "2":
+    prato="Macarronada"
+    preco="R$35.00"
+    pare
+    caso "3":
+    prato="Caviar" 
+    preco="R$ 50.00"
+    pare
+    caso "4":
+    prato="Lasanha"
+    preco="R$ 20.00"
+    pare
+    caso "5":
+    prato="Bife Acebolado" 
+    preco="R$ 15.00"
+        caso contrario: 
+        escreva("Opção Invalida")
+    }
+
+    //Exibindo pedido e valor
+    escreva("\nPrato Escolhido: ",prato)
+    escreva("\nPreço do Prato: ",preco)
+  }
+}
