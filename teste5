@@ -1,0 +1,57 @@
+programa{
+  funcao inicio(){
+    //Definindo Variáveis 
+    cadeia estado, diasemana,opcao
+    //Exibindo Dias da semana ao usuario
+    escreva("\t\t\t\t====DIAS DA SEMANA====")
+    escreva("\n1-Domingo")
+    escreva("\n2-Segunda")
+    escreva("\n3-Terca")
+    escreva("\n4-Quarta")
+    escreva("\n5-Quinta")
+    escreva("\n6-Sexta")
+    escreva("\n7-Sabado")
+    //Solicitando o dia da semana ao usuario
+    escreva("\n\nDigite o numero correspondente ao dia da semana: ")
+    leia(opcao)
+    //Lendo dados do usuario
+    escolha(opcao){
+      caso "1":
+      diasemana="Domingo"
+      estado="Nao e dia util"
+      pare
+      caso "2" :
+      diasemana="Segunda"
+      estado="Dia Util"
+      pare
+      caso "3" :
+      diasemana="Terca"
+      estado="Dia Util"
+      pare
+      caso "4" :
+      diasemana="Quarta"
+      estado="Dia Util"
+      pare
+      caso "5":
+      diasemana="Quinta"
+      estado="Dia Util"
+      pare
+      caso "6":
+      diasemana="Sexta"
+      estado="Dia Util"
+      pare
+      caso "7":
+      diasemana="Sabado"
+      estado="Nao e dia util"
+      pare
+          caso contrario:
+              escreva("Processo Invalido")
+    }
+    //Exibindo dados ao usuario
+    limpa()
+    escreva("\n=====EXIBINDO RESULTADO=====")
+    escreva("\nDia Escolhido: ",diasemana)
+    escreva("\nEstado do dia:",estado)
+
+  }
+}
