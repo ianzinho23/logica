@@ -1,0 +1,32 @@
+programa{
+  funcao inicio(){
+    //Definindo Variáveis
+    cadeia gen
+    real peso, altura
+    //Solicitando dados ao Usuário
+    escreva("\t\tDigite M para Masculino e F para feminino")
+    escreva("\nDigite seu Genero: ")
+    leia(gen)
+    escreva("\nDigite sua Altura: ")
+    leia(altura)
+    //Cauculando Peso ideal
+    escolha(gen){
+      caso "M" :
+      peso=(72.7 * altura) - 58
+      pare
+      caso "F":
+      peso=(62.1 * altura) - 44.7
+      pare
+          caso contrario:
+              escreva("Operacao Invalida")        
+    }
+    //Exibindo Dados ao Usuario
+    limpa()
+    escreva("\n====EXIBINDO PESO IDEAL====")
+    escreva("\nSeu Genero: ", gen)
+    escreva("\nSua altura: ",altura)
+    escreva("\nSeu Peso ideal: ",peso)
+    escreva("\n====FIM DO PROGRAMA====")
+
+  }
+}
