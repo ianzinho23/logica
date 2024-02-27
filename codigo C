@@ -1,0 +1,31 @@
+#include <stdio.h>
+
+int main (){
+	//Declarando variáveis.
+	char sexo;
+	char nome[200];
+	int idade;
+	float peso;
+	//Solicitando dados ao usuário.
+	printf("Digite o seu nome: ");
+	scanf("%s",&nome);
+	
+	fflush(stdin); //limpa o cache de input
+	
+	printf("Informe o seu sexo com: F ou M:");
+	scanf("%c",&sexo);
+	
+	printf("Digite sua idade:");
+	scanf("%i",&idade);
+	
+	printf("Informe o seu peso: ");
+	scanf("%f",&peso);
+	//Exibindo dados para o usuário.
+	printf("\n====Exibindo dados==== \n");
+	printf("Nome: %s \n",nome);
+	printf("Sexo: %c \n",sexo);
+	printf("Idade: %i \n",idade);
+	printf("Peso: %f \n",peso);
+	
+	return 0;
+}
