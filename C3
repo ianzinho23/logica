@@ -1,0 +1,40 @@
+#include <stdio.h>
+#include <locale.h>
+
+  int main(){
+  	setlocale(LC_ALL, "");
+  	//Definindo variáveis
+  	char nome[200];
+  	int idade;
+  	int nota1;
+  	int nota2;
+  	int nota3;
+  	float media;
+  	int soma;
+  	//Solicitando dados ao usuário
+  	printf("Digite o seu nome:");
+  	scanf("%s",&nome);
+  	printf("Digite a sua idade:");
+  	scanf("%i",&idade);
+  	printf("Digite sua primeira nota:");
+  	scanf("%i",&nota1);
+  	printf("Digite sua segunda nota: ");
+  	scanf("%i",&nota2);
+  	printf("Digite sua terceira nota: ");
+  	scanf("%i",&nota3);
+  	//Realizando caucuculo
+  	soma=nota1+nota2+nota3;
+  	media=soma/3;
+  	//Exibindo resultados
+  	printf("\n====EXIBINDO RESULTADOS====\n");
+  	printf("Nome: %s \n",nome);
+  	printf("Idade: %i \n",idade);
+  	printf("Média: %f \n",media);
+  	
+  	if(media>=7){
+  		printf("\nAprovado");
+	  }
+	  else{
+	  	printf("\nReprovado");
+	  }
+  }
