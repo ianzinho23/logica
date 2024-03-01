@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <locale.h>
+	int main(){
+		setlocale(LC_ALL, "");
+		//Definindo Variável
+		float desconto=0.90;
+		float valor;
+		float resultado;
+		//Solicitando Valor
+		printf("Insira o Valor: ");
+		scanf("%f",&valor);
+		//realizando cauculo
+		resultado=valor*desconto;
+		//Exibindo Resultado
+		printf("===Exibindo Resultados===\n");
+		printf("Valor Informado: %f \n ",valor);
+		printf("Resultado: %f \n",resultado);
+		
+		return 0;
+	}
