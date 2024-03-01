@@ -1,0 +1,47 @@
+#include <stdio.h>
+	int main(){
+		//Definindo variáveis
+		char nome[200];
+		int idade;
+		int nota1;
+		int nota2;
+		int nota3;
+		int nota4;
+		float mediaA;
+		int soma;
+		//Solicitando dados ao usuário
+		printf("===Solicitando dados===");
+		
+		printf("\nDigite seu nome: ");
+		scanf("%s",&nome);
+		
+		printf("Digite sua idade: ");
+		scanf("%i",&idade);
+		
+		printf("Sua primeira nota: ");
+		scanf("%i",&nota1);
+		
+		printf("Sua segunda nota: ");
+		scanf("%i",&nota2);
+		
+		printf("Sua terceira nota: ");
+		scanf("%i",&nota3);
+		
+		printf("Sua quarta nota: ");
+		scanf("%i",&nota4);
+		//Definindo resultado
+		soma=nota1+nota2+nota3+nota4;
+		mediaA=soma/4;
+		//Exibindo resultados
+		printf("\n ====Exibindo resultados=== \n");
+		printf("Nome: %s \n",nome);
+		printf("Idade: %i \n",idade);
+		printf("Primeira Nota: %i \n",nota1);
+		printf("Segunda Nota: %i \n",nota2);
+		printf("Terceira Nota: %i \n",nota3);
+		printf("Quarta Nota: %i \n",nota4);
+		printf("Media: %f",mediaA);
+		
+		return 0;
+	}
+	
