@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+#include <string.h>
+	int main (){
+		//Declarando Variáveis
+		char login[200];
+		char senha[200];
+		char loginCadastrado[200]="ian234";
+		char senhaCadastrada [200]="1234";
+		//Solicitando dados ao usuário
+		printf("Digite seu login: ");
+		scanf("%s",login);
+		printf("Digite sua senha:");
+		scanf("%s",senha);
+		//Verificando login e senha
+		
+		if(strcmp(login,loginCadastrado) == 0 && strcmp(senha,senhaCadastrada)==0)
+		{
+			printf("Login correto bem vindo!");
+		}
+		else{
+			printf("Login ou senha incorreto, tente novamente.");
+		}
+		return 0;
+	}
