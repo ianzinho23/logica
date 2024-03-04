@@ -1,0 +1,31 @@
+#include <stdio.h>
+#include <locale.h>
+#include <string.h>
+
+	int main(){
+		setlocale(LC_ALL,"");
+		//Definindo Variáveis
+		char prato;
+		int preco;
+		int opcao;
+		//Exibindo menu
+		printf("\t\t\t====MENU==== \n");
+		printf("\n \t\t1-Picanha \t\tR$25,00");
+		printf("\n \t\t2-Macarronada \t\tR$15,00");
+		printf("\n \t\t3-Bife acebolado \tR$35,00");
+		printf("\n \t\t4-Caviar \t\tR$100,00");
+		//Solicitando pedido ao usuário
+		printf("Digite o numero do seu pedido: ");
+		scanf("%i",opcao);
+		//switch case
+		switch(opcao) {
+			case 1:
+				strcpy(prato,"Picanha");
+				preco=25.00;
+				break;
+		default :
+			printf("Opção inválida");		
+		}
+		printf("Prato escolhido: %s \n",prato);
+
+	}
