@@ -1,0 +1,62 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+#include <string.h>
+
+	void cabecalho () {
+		system("cls || clear");//Serve para limpar o terminal
+		printf("\n==== SENAI ====");
+		fflush(stdin);//Serve para limpar o cache e evitar travamentos e pular perguntas
+}
+	int subtrair(int n1, int n2) {
+		int subtracao;
+		subtracao=n1-n2;
+		return subtracao;
+	}
+	
+	int somar(int n1, int n2) {
+		int soma;
+		soma=n1+n2;
+		return soma;
+	
+	}
+	int multiplicar(int n1, int n2){
+		int multiplicacao;
+		multiplicacao=n1*n2;
+		return multiplicacao;
+	}	
+	int dividir (int n1, int n2){
+		float divisao;
+		divisao=n1/n2;
+		return divisao;
+	}
+	
+	int main(){
+		setlocale(LC_ALL,"");
+		
+		int N1,N2,subtracao,soma,multiplicacao;
+		float divisao;
+		
+		cabecalho();
+		printf("\nDigite um número:");
+		scanf("%i",&N1);
+		
+		cabecalho();
+		printf("\nDigite outro número:");
+		scanf("%i",&N2);
+		
+		subtracao=subtrair(N1,N2);
+		soma=somar(N1,N2);
+		divisao=dividir(N1,N2);
+		multiplicacao=multiplicar(N1,N2);
+		
+		system("cls || clear");
+		printf("===Exibindo resultado===\n");
+		printf("Resultado da Subtração:%i \n",subtracao);
+		printf("Resultado da Soma:%i \n",soma);
+		printf("Resultado da Divisão:%f \n",divisao);
+		printf("Resultado da Multiplicação:%i \n",multiplicacao);
+		
+		return 0;
+
+	}
