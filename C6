@@ -5,7 +5,7 @@
 	int main(){
 		setlocale(LC_ALL,"");
 		//Definindo Variáveis
-		char prato;
+		char prato[200];
 		int preco;
 		int opcao;
 		//Exibindo menu
@@ -15,17 +15,30 @@
 		printf("\n \t\t3-Bife acebolado \tR$35,00");
 		printf("\n \t\t4-Caviar \t\tR$100,00");
 		//Solicitando pedido ao usuário
-		printf("Digite o numero do seu pedido: ");
-		scanf("%i",opcao);
+		printf("\nDigite o numero do seu pedido: ");
+		scanf("%i",&opcao);
 		//switch case
 		switch(opcao) {
 			case 1:
 				strcpy(prato,"Picanha");
 				preco=25.00;
 				break;
+			case 2:
+				strcpy(prato,"Macarronada");
+				preco=15.00;
+				break;
+			case 3:
+				strcpy(prato,"Bife Acebolado");
+				preco=35.00;
+				break;
+			case 4:
+				strcpy(prato,"Caviar");
+				preco=100.00;
+				break;	
 		default :
 			printf("Opção inválida");		
 		}
 		printf("Prato escolhido: %s \n",prato);
+		printf("R$ %i \n",preco);
 
 	}
