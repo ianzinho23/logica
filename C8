@@ -1,0 +1,28 @@
+#include <stdio.h>
+#include <locale.h>
+
+	int main() {
+		setlocale(LC_ALL,"");
+		
+		int i, valor;
+		int impar= 0,par = 0;
+		
+		for (i= 1; i <= 5; i++){
+		printf("Digite o %iª valor:", i);
+		scanf("%i",&valor);
+			
+			
+			if(valor % 2 == 0){
+				//par = par + 1
+				par++;
+			}else{
+				//impar = impar + 1
+				impar++;
+			}
+}
+		printf("Impar: %i \n",impar);
+		printf("Par: %i \n",par);
+		
+		
+		return 0;
+	}
